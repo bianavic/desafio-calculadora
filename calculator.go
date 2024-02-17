@@ -13,7 +13,7 @@ func add(i ...int) int {
 func subtract(i ...int) int {
 	total := 0
 	for _, v := range i {
-		total -= v
+		total = v - total
 	}
 	return total
 }
@@ -29,7 +29,7 @@ func multiply(i ...int) int {
 func divide(i ...int) int {
 	total := 1
 	for _, v := range i {
-		total *= v
+		total = v / total
 	}
 	return total
 }
